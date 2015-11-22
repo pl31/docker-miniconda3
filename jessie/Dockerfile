@@ -11,7 +11,6 @@ RUN echo "Europe/Berlin" > /etc/timezone && \
     (cd ~ && curl -O http://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh) && \
     chmod +x ~/Miniconda3-latest-Linux-x86_64.sh && \
     ~/Miniconda3-latest-Linux-x86_64.sh -b && \ 
-    rm ~/Miniconda3-latest-Linux-x86_64.sh && \
-    ~/.docker-build-scripts/cleanup
+    rm ~/Miniconda3-latest-Linux-x86_64.sh
 
 ENV PATH $PATH:/root/miniconda3/bin
